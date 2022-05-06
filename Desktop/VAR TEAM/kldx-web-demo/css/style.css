@@ -1,0 +1,114 @@
+*{
+    padding: 0px ;
+    margin: 0px ;
+    box-sizing: border-box ;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.nav-links,.nav-social-links{
+    display: flex;
+    justify-content: space-around;
+}
+.nav-links{
+    list-style: none;
+    width: 25%;
+    color: #2B2B2B;
+    font-size: 15px;
+    font-weight: 700;
+}
+.nav-social-links{
+    list-style: none;
+    width: 5%;
+}
+.nav-social-links a{
+    color: red;
+}
+.nav-social-links a:hover{
+    color: #0077b5;
+    transition: .5s;
+
+}
+.nav-links a{
+    text-decoration: none;
+}
+.burger-bar{
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        left: 0px;
+        height: 100vh;
+        top: 0vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 30px;
+        width: 300px;
+        background-color:red;
+        transform: translateX(-100%);
+        transition: transform 0.1s ease-in;
+        opacity: 1 !important;
+    }
+    .nav-links li{
+        padding: 30px;
+    }
+    .nav-social-links{
+        display: none;
+    }
+    .burger-bar{
+        display: block;
+    }  
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+.fade-active{
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+/* Header */
+
+.header{
+    background:rgba(0,0,0,0.7) url("../img/digital-financial-services02.jpg");
+    background-size: cover;
+    padding: 100px 0px 100px 0px;
+    background-blend-mode: darken;
+    
+}
+
+
+.intro{
+    /* background-color: red; */
+    text-align: center;
+    padding: 10px;
+}
+.intro1{
+    color: #FFFFFF;
+    font-size: 40px;
+    font-family: 'Lexend Exa', sans-serif;
+    line-height: 1.2em;
+    font-weight: bold;
+    padding: 10px;
+}
+.intro2{
+    text-align: center;
+    color:red;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing:2px;
+}
